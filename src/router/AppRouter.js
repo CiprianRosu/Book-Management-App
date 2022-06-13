@@ -1,10 +1,11 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from '../components/Header';
 import AddBook from '../components/AddBook';
 import BooksList from '../components/BooksList';
 import useLocalStorage from '../hooks/useLocalStorage';
 import EditBook from '../components/EditBook';
+import {Navigate} from 'react-router-dom';
 
 
 const AppRouter = () => {
@@ -29,7 +30,7 @@ const AppRouter = () => {
             element= {<EditBook books={books} setBooks={setBooks} />}
              path="/edit/:id"
             />
-            {/* <Route component={() => <Redirect to="/" />} /> */}
+            <Route element={() => <Navigate to="/" />} />
           </Routes>
         </div>
       </div>
