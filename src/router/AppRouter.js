@@ -32,6 +32,7 @@ const AppRouter = () => {
             />
             <Route element={() => <Navigate to="/" />} />
           </Routes>
+       
         </div>
       </div>
     </BrowserRouter>

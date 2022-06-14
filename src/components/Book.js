@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Card } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -23,12 +23,14 @@ const Book = ({
           <div>Price: {price} </div>
           <div>Date: {new Date(date).toDateString()}</div>
         </div>
-        <Button variant="primary" onClick={() => navigate(`/edit/${id}`)}>
+        
+        <button className='button button1' onClick={() => navigate(`/edit/${id}`)}>
   Edit
-</Button>{' '}
-        <Button variant="danger" onClick={() => handleRemoveBook(id)}>
+</button>{' '}
+        <button className='button button2' onClick={() => handleRemoveBook(id)}>
           Delete
-        </Button>
+        </button>
+        
       </Card.Body>
     </Card>
   );

@@ -1,7 +1,7 @@
 body {
-  background: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  background-color:#070808 ;
   font-family: Noto Sans, Helvetica, sans-serif;
-  color: #666;
+  color: rgb(0, 0, 0);
   letter-spacing: 1px;
   padding: 10px;
   min-height: 100vh;
@@ -12,7 +12,7 @@ header {
   margin: 10px 0 10px 0;
 
   .links {
-    text-transform: uppercase;
+    
     text-align: center;
     font-size: 150%;
     margin-bottom: 20px;
@@ -24,7 +24,7 @@ header {
       margin: 1rem;
       color: #fff;
       text-decoration: none;
-      text-transform: uppercase;
+      
       border-bottom: 2px solid transparent;
       transition: all 0.3s;
       -webkit-transition: all 0.3s;
@@ -45,15 +45,13 @@ header {
 }
 
 h1 {
-  text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85,
-    -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606,
-    0 -80px 70px #973716, 10px -90px 80px #451b0e;
+  
   display: inline-block;
 }
 
 h1,
 h2 {
-  color: #666;
+  color: rgb(255, 255, 255);
 }
 
 .main-content {
@@ -97,15 +95,15 @@ h2 {
 }
 
 .main-form {
-  color: #222222;
+  color: #ffffff;
   font-size: 18px;
   width: 70%;
   margin: auto;
 }
 
 .input-control {
-  border: 1px solid #ccc;
-  color: #555555;
+  border: 1px solid rgb(0, 0, 0);
+  color: #000000;
   background-color: #fff;
   height: 46px;
   font-size: 18px;
@@ -165,6 +163,24 @@ button {
   font-size: 25px;
   margin-left: 10px;
 }
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px auto;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  width: 100px;
+  cursor: pointer;
+  height:35px;
+  border-radius: 5px;
+}
+
+.button1 {background-color: #0d6efd;}
+.button2 {background-color: #ee1e1e;}
 
 @media screen and (max-width: 400px) {
   h1 {
